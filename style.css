@@ -1,0 +1,112 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Fira Code", monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #58a6ff;
+}
+
+header p {
+  color: #8b949e;
+  margin-top: 0.5rem;
+}
+
+/* ===== MAIN GRID ===== */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+
+/* ===== CATEGORY CARDS ===== */
+.category {
+  background-color: #161b22;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 5px solid #58a6ff;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.15);
+}
+
+.category h2 {
+  min-height: 4.5rem;
+  font-size: 1.3rem;
+  color: #58a6ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; /* horizontal centering */
+  text-align: center;       /* centers multi-line text */
+}
+
+/* ===== LINKS ===== */
+.category ul {
+  list-style: none;
+  text-align: center;
+}
+
+.category li {
+  margin: 0.5rem 0;
+}
+
+.category a {
+  text-decoration: none;
+  color: #c9d1d9;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.category a:hover {
+  background-color: #238636;
+  color: #ffffff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.category h2 a {
+  color: #58a6ff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.category h2 a:hover {
+  text-decoration: underline;
+}
